@@ -1,6 +1,17 @@
 import tweepy
 import json
 
+# creer un fichier credential de la forme : 
+#
+#{
+#    "api_key" : "xxxxxxxx", 
+#    "api_secret_key" : "xxxxxxxxxxxe",	
+#    "access_token" : "xxxxxxxxxxxxxxxx",
+#    "access_token_secret" : "xxxxxxxxxxxxxxxxxx"
+#}
+#
+
+
 def auth(credentialjason):
    #ouvre le json avec les crédits. 
    credentials = json.loads(open(credentialjason).read())
