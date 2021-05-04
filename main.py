@@ -3,9 +3,10 @@
 import tweepy 
 import json
 import random 
-import credentials # fichier pour se connecter à l'app
+import auth
+# fichier pour se connecteri a l'app
 
-api,auth = credentials.auth()
+api,auth = auth.auth("credentials")
 api.update_status(status="hello world")
 
 
